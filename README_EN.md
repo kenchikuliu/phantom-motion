@@ -133,8 +133,10 @@ If you want to experience the extreme power of the V6.0 engine, directly copy th
 <summary><b>🪐 Script 04: "Sky Orbit: Qian Xuesen Trajectory" (90s · Hardcore Sci-Fi)</b></summary>
 
 <div align="center">
-  <video src="https://github.com/Pixelxzen/phantom-motion/raw/main/tests/xingji/output_1080p_16_9.mp4" controls="controls" muted="muted" poster="https://github.com/Pixelxzen/phantom-motion/raw/main/tests/xingji/xingji-cover.png" style="max-width: 100%; border-radius: 8px; margin: 10px 0;"></video>
-  <p><i>(Official 1080P Landscape Render. Recommend full-screen viewing to experience the epic texture of GPGPU particles and Charon's voice)</i></p>
+  <a href="https://github.com/Pixelxzen/phantom-motion/raw/main/tests/xingji/output_1080p_16_9.mp4">
+    <img src="https://github.com/Pixelxzen/phantom-motion/raw/main/tests/xingji/xingji-cover.png" style="max-width: 100%; border-radius: 8px; margin: 10px 0;" alt="Sky Orbit 1080P Demo">
+  </a>
+  <p><i>(Official 1080P Landscape Render. Click the cover image above to play the video and experience the epic texture of GPGPU particles and Charon's voice)</i></p>
 </div>
 
 > "Call max scientific computation, create a 90s hardcore popular science of Qian Xuesen trajectory (Boost-glide).
