@@ -21,6 +21,10 @@
   </p>
 </div>
 
+<div align="center">
+  <img src="./assets/phantom-motion-poster.jpg" width="100%" alt="Phantom Motion Poster">
+</div>
+
 ---
 
 ## 🌟 为什么它能降维打击传统影视工业？
@@ -127,6 +131,11 @@ Phantom Motion 被设计为一个极其优雅的 CLI 智能体 Skill。它可以
 
 <details>
 <summary><b>🪐 剧本 04：《苍穹之轨：钱学森弹道》（90秒 · 极致硬核科幻）</b></summary>
+
+<div align="center">
+  <video src="https://github.com/Pixelxzen/phantom-motion/raw/main/tests/xingji/output_1080p_16_9.mp4" controls="controls" muted="muted" poster="https://github.com/Pixelxzen/phantom-motion/raw/main/tests/xingji/xingji-cover.png" style="max-width: 100%; border-radius: 8px; margin: 10px 0;"></video>
+  <p><i>（官方 1080P 横屏渲染实测，建议全屏观看，感受 GPGPU 粒子与 Charon 音色的史诗质感）</i></p>
+</div>
 
 > "调用最大科学算力，制作 90 秒的钱学森弹道（Boost-glide）硬核科普。
 > **[0-3秒] 巨幕片头**：纯黑背景，大字「 苍 穹 之 轨 」。
