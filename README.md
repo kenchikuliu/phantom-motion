@@ -22,7 +22,7 @@
 </div>
 
 <div align="center">
-  <img src="./assets/phantom-motion-poster.jpg" width="100%" alt="Phantom Motion Poster">
+  <img src="./assets/phantom-motion-poster-v2.jpg" width="100%" alt="Phantom Motion Poster">
 </div>
 
 ---
