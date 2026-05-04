@@ -133,8 +133,11 @@ Phantom Motion 被设计为一个极其优雅的 CLI 智能体 Skill。它可以
 <summary><b>🪐 剧本 04：《苍穹之轨：钱学森弹道》（90秒 · 极致硬核科幻）</b></summary>
 
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/cfc307a5-c3cd-498c-9b7e-971661cc2e3b" controls="controls" muted="muted" style="max-width: 100%; border-radius: 8px; margin: 10px 0;"></video>
-  <p><i>（官方 1080P 横屏渲染实测，点击播放视频，感受 GPGPU 粒子与 Charon 音色的史诗质感）</i></p>
+  <a href="https://github.com/Pixelxzen/phantom-motion/blob/main/tests/xingji/output_1080p_16_9.mp4">
+    <img src="https://github.com/Pixelxzen/phantom-motion/raw/main/tests/xingji/xingji-cover.png" style="max-width: 100%; border-radius: 8px; margin: 10px 0;" alt="苍穹之轨：钱学森弹道 1080P 演示">
+  </a>
+  <br>
+  <p><i>（官方 1080P 横屏渲染实测，点击上方封面图即可在网页内播放大片）</i></p>
 </div>
 
 > "调用最大科学算力，制作 90 秒的钱学森弹道（Boost-glide）硬核科普。
