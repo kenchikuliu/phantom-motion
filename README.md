@@ -133,7 +133,7 @@ Phantom Motion 被设计为一个极其优雅的 CLI 智能体 Skill。它可以
 <summary><b>🪐 剧本 04：《苍穹之轨：钱学森弹道》（90秒 · 极致硬核科幻）</b></summary>
 
 <div align="center">
-  <video src="https://github.com/Pixelxzen/phantom-motion/raw/main/tests/xingji/output_1080p_16_9.mp4" controls="controls" muted="muted" style="max-width: 100%; border-radius: 8px; margin: 10px 0;"></video>
+  <video src="https://github.com/Pixelxzen/phantom-motion/raw/main/tests/xingji/output_1080p_16_9_SD.mp4" controls="controls" muted="muted" poster="https://github.com/Pixelxzen/phantom-motion/raw/main/tests/xingji/xingji-cover.png" style="max-width: 100%; border-radius: 8px; margin: 10px 0;"></video>
   <br>
   <p><i>（官方 1080P 横屏渲染实测，建议全屏观看，感受 GPGPU 粒子与 Charon 音色的史诗质感）</i></p>
 </div>

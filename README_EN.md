@@ -133,7 +133,7 @@ If you want to experience the extreme power of the V6.0 engine, directly copy th
 <summary><b>🪐 Script 04: "Sky Orbit: Qian Xuesen Trajectory" (90s · Hardcore Sci-Fi)</b></summary>
 
 <div align="center">
-  <video src="https://github.com/Pixelxzen/phantom-motion/raw/main/tests/xingji/output_1080p_16_9.mp4" controls="controls" muted="muted" style="max-width: 100%; border-radius: 8px; margin: 10px 0;"></video>
+  <video src="https://github.com/Pixelxzen/phantom-motion/raw/main/tests/xingji/output_1080p_16_9_SD.mp4" controls="controls" muted="muted" poster="https://github.com/Pixelxzen/phantom-motion/raw/main/tests/xingji/xingji-cover.png" style="max-width: 100%; border-radius: 8px; margin: 10px 0;"></video>
   <br>
   <p><i>(Official 1080P Landscape Render. Recommend full-screen viewing to experience the epic texture of GPGPU particles and Charon's voice)</i></p>
 </div>
