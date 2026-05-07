@@ -13,7 +13,7 @@
   </p>
 
   <p>
-    <img src="https://img.shields.io/badge/Version-8.0.0-8A64B7.svg?style=for-the-badge" alt="Version">
+    <img src="https://img.shields.io/badge/Version-8.1.0-8A64B7.svg?style=for-the-badge" alt="Version">
     <img src="https://img.shields.io/badge/License-Apache_2.0-success.svg?style=for-the-badge" alt="License">
     <img src="https://img.shields.io/badge/AI_Agent-Claude_Code_/_Gemini-blue.svg?style=for-the-badge" alt="AI Agent">
     <img src="https://img.shields.io/badge/Stack-Three.js_|_GSAP-black.svg?style=for-the-badge" alt="Stack">
@@ -35,6 +35,7 @@
 - **🎥 剧本驱动的电影级 Camera Rig**：严禁摄像机乱飞！内置四大经典运镜（静态悬浮、深渊拉近、史诗环绕、焦点拉扯）。大模型根据剧本情感，通过 GSAP 轨道车替身技术，精确调度 3D 机位。
 - **🏛️ 3D 非遗与全息引擎**：直接支持 GLTF/GLB 外部高精 PBR 模型加载，并能一键切换至 `Hologram Mode`（紫苏色发光网格透视），完美演绎非遗与现代科技的碰撞。
 - **📊 高级数据可视化引擎**：摒弃掉帧的传统图表库，采用 `D3.js + GSAP`，将真实数据映射为极具东方美学的高级平滑曲线（Spline），伴随旁白做动态生长动画。
+- **🏷️ SVGL 品牌库集成**：原生集成 SVGL 接口，支持只需提供知名品牌名称（如 GitHub, OpenAI），AI 即可自动下载并内联其高清矢量 SVG Logo 与文字商标，无需繁琐的本地路径配置。
 - **🚫 0 版权法务风险**：所有核心特效全部由原生 WebGL、Three.js Shader 和 开源协议库构成，拒绝任何闭源付费插件，生成的 MP4 视频 100% 归创作者所有。
 
 ---

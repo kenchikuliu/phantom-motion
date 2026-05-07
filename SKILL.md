@@ -9,9 +9,10 @@ description: >-
   当用户提到「幻象」「phantom」「motion graphic」「代码动画」「HTML 动画」
   「视觉叙事」「动态视觉」「生成动画」「motiongraphic」或表达
   「生成一个关于 XXX 的动画」「做一个 XXX 的视觉体验」意图时触发此技能。
+  （支持 MIT 协议的 SVGL 库，内置 1500+ 品牌 Logo 资产）
 ---
 
-# 幻象 MotionGraphic 智能体 v7.0.0 (Physics & Video Export Edition)
+# 幻象 MotionGraphic 智能体 v8.1.0 (SVGL Integration)
 
 世界顶级视觉设计大师与动态图形艺术家工作流。融合乔布斯对产品直觉的偏执、
 迪特·拉姆斯「少，却更好」的功能纯粹主义、以及现代数字艺术的前沿美学。
@@ -71,7 +72,7 @@ v7.0 引入了**实时物理引擎与流体粒子碰撞**指令支持，配合 v
 展示欢迎界面并收集主题与生成路径：
 
 ```
-🎬 幻象 MotionGraphic 工作室 v8.0.0
+🎬 幻象 MotionGraphic 工作室 v8.1.0
 
 欢迎！我将为你打造一个令人震撼的动态视觉体验。
 
@@ -157,8 +158,8 @@ v7.0 引入了**实时物理引擎与流体粒子碰撞**指令支持，配合 v
 ```
 🏷️ 品牌素材（可选，直接回车跳过）：
 
-   • Logo 文件路径（SVG/PNG）
-   • 品牌主色值（如 #FF6B35）
+   • 品牌 Logo（支持直接输入知名品牌名称，如 OpenAI、Vercel、Claude、Github 等，AI 将自动从 1500+ SVGL 库中调取；也可提供本地 SVG/PNG 路径）
+   • 品牌主色值（如 #FF6B35，如果不指定，AI 可根据 Logo 自动提取主色调）
    • 自定义字体文件路径
    • 版权署名（默认保留：© 2026 Creative by 紫苏子ACG。如需修改请直接告诉我！）
 ```
@@ -175,7 +176,7 @@ v7.0 引入了**实时物理引擎与流体粒子碰撞**指令支持，配合 v
    🎨 设计方案：{scheme_primary} + {scheme_secondary} + {scheme_tertiary}
    ⏱️ 预估时长：{duration} 秒
    🎙️ 旁白：{voice_gender}，{language}，{style}（固定 1.0x 语速）
-   🏷️ 品牌：{brand_info}
+   🏷️ 品牌：{brand_info}（如果是知名品牌名称，将自动调用 SVGL 获取）
    📄 版权：{copyright}
 
    ✅ 确认开始生成？（Y/n）
@@ -266,6 +267,25 @@ python3 scripts/bgm-generate.py \
 - 音乐时长格式必须严格匹配：前 3 秒片头 + 正式动画时长 + 后 3 秒片尾黑幕结束。
 - 生成绝对无人声的纯背景音乐
 - 输出 MP3 文件 + Base64 编码版本
+
+### Phase 3.5：获取品牌 Logo 素材 (可选)
+
+如果用户指定了知名品牌名称（而非具体文件路径），AI 代理需主动调用 `scripts/svgl-search.py` 从 SVGL 库中搜索并下载品牌 Logo。
+
+```bash
+python3 scripts/svgl-search.py \
+  --query "{brand_name}" \
+  --theme {light|dark} \
+  --output-dir ./phantom-output/brand/
+```
+
+脚本功能：
+- 连接 SVGL API (`https://api.svgl.app`) 进行模糊匹配查询
+- 自动下载适配暗黑或明亮模式的矢量 Logo (`.svg`) 文件
+- 支持 Logo 标志与 Wordmark（文字商标）双版本下载
+- 输出下载后的本地文件路径，供 HTML 生成阶段内联或引用
+
+在后续 HTML 代码生成阶段，直接将下载好的本地 SVG 代码内联到 HTML 中。
 
 ### Phase 4：生成 HTML 动画骨架
 
