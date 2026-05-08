@@ -173,7 +173,7 @@ If you want to experience the extreme power of the V9.0 engine, directly copy th
 
 ## 🤝 Acknowledgements & License
 
-This project was originally developed by **Pixelxzen**.
+This project was originally developed by **紫苏子ACG (Zisuzi ACG)**.
 - **Phantom Motion Core Code**: Open-sourced under the [Apache-2.0 License](./LICENSE).
 - **Font & Math Engine**: Based on MIT licensed [KaTeX](https://github.com/KaTeX/KaTeX) and [SplitType](https://github.com/lukePeeters/SplitType).
 - **Graphics & Animation**: Powered by [Three.js](https://threejs.org/) and [GSAP](https://greensock.com/), partial data chart rendering supported by [D3.js](https://d3js.org/).
@@ -190,8 +190,8 @@ If you like this project, feel free to follow my social media or buy me a coffee
 <div align="center">
   <p>
     <a href="https://www.xiaohongshu.com/user/profile/5b80023bd72b6300011273e6"><img src="https://img.shields.io/badge/Xiaohongshu-小红书-E1306C?style=flat-square&logo=xiaohongshu&logoColor=white" alt="Xiaohongshu"></a>
-    <img src="https://img.shields.io/badge/WeChat_Official-Pixelxzen-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Official">
-    <img src="https://img.shields.io/badge/WeChat_Video-Pixelxzen-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Video">
+    <img src="https://img.shields.io/badge/WeChat_Official-紫苏子ACG-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Official">
+    <img src="https://img.shields.io/badge/WeChat_Video-紫苏子ACG-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Video">
     <a href="https://x.com/Pixelxzen"><img src="https://img.shields.io/badge/X-(Twitter)-000000?style=flat-square&logo=x&logoColor=white" alt="X (Twitter)"></a>
   </p>
   

@@ -173,7 +173,7 @@ Phantom Motion 被设计为一个极其优雅的 CLI 智能体 Skill。它可以
 
 ## 🤝 鸣谢与版权声明
 
-本项目由 **Pixelxzen** 原创开发。
+本项目由 **紫苏子ACG** 原创开发。
 - **Phantom Motion 核心代码**：采用 [Apache-2.0 License](./LICENSE) 开源协议。
 - **字体与数学引擎**：基于 MIT 协议的 [KaTeX](https://github.com/KaTeX/KaTeX) 与 [SplitType](https://github.com/lukePeeters/SplitType)。
 - **图形与动画**：基于 [Three.js](https://threejs.org/) 与 [GSAP](https://greensock.com/)，部分数据图表渲染由 [D3.js](https://d3js.org/) 提供支持。
@@ -190,8 +190,8 @@ Phantom Motion 被设计为一个极其优雅的 CLI 智能体 Skill。它可以
 <div align="center">
   <p>
     <a href="https://www.xiaohongshu.com/user/profile/5b80023bd72b6300011273e6"><img src="https://img.shields.io/badge/Xiaohongshu-小红书-E1306C?style=flat-square&logo=xiaohongshu&logoColor=white" alt="Xiaohongshu"></a>
-    <img src="https://img.shields.io/badge/WeChat_Official-Pixelxzen-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Official">
-    <img src="https://img.shields.io/badge/WeChat_Video-Pixelxzen-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Video">
+    <img src="https://img.shields.io/badge/WeChat_Official-紫苏子ACG-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Official">
+    <img src="https://img.shields.io/badge/WeChat_Video-紫苏子ACG-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Video">
     <a href="https://x.com/Pixelxzen"><img src="https://img.shields.io/badge/X-(Twitter)-000000?style=flat-square&logo=x&logoColor=white" alt="X (Twitter)"></a>
   </p>
   
