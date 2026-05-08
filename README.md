@@ -13,7 +13,7 @@
   </p>
 
   <p>
-    <img src="https://img.shields.io/badge/Version-8.1.0-8A64B7.svg?style=for-the-badge" alt="Version">
+    <img src="https://img.shields.io/badge/Version-9.0.0-8A64B7.svg?style=for-the-badge" alt="Version">
     <img src="https://img.shields.io/badge/License-Apache_2.0-success.svg?style=for-the-badge" alt="License">
     <img src="https://img.shields.io/badge/AI_Agent-Claude_Code_/_Gemini-blue.svg?style=for-the-badge" alt="AI Agent">
     <img src="https://img.shields.io/badge/Stack-Three.js_|_GSAP-black.svg?style=for-the-badge" alt="Stack">
@@ -33,9 +33,11 @@
 
 - **🎙️ Audio-First (音频优先) 引擎**：先生成声音，再画画面。利用 TTS 获取绝对时间轴，实现 GSAP `Duck & Swell`（BGM 随人声自动避让烘托），做到微秒级的音画同步。
 - **🎥 剧本驱动的电影级 Camera Rig**：严禁摄像机乱飞！内置四大经典运镜（静态悬浮、深渊拉近、史诗环绕、焦点拉扯）。大模型根据剧本情感，通过 GSAP 轨道车替身技术，精确调度 3D 机位。
-- **🏛️ 3D 非遗与全息引擎**：直接支持 GLTF/GLB 外部高精 PBR 模型加载，并能一键切换至 `Hologram Mode`（紫苏色发光网格透视），完美演绎非遗与现代科技的碰撞。
+- **🏛️ 3D 非遗与全息引擎**：直接支持 GLTF/GLB 外部高精 PBR 模型加载，并能一键切换至 `Hologram Mode`（发光网格透视），完美演绎非遗与现代科技的碰撞。
 - **📊 高级数据可视化引擎**：摒弃掉帧的传统图表库，采用 `D3.js + GSAP`，将真实数据映射为极具东方美学的高级平滑曲线（Spline），伴随旁白做动态生长动画。
-- **🏷️ SVGL 品牌库集成**：原生集成 SVGL 接口，支持只需提供知名品牌名称（如 GitHub, OpenAI），AI 即可自动下载并内联其高清矢量 SVG Logo 与文字商标，无需繁琐的本地路径配置。
+- **🏷️ SVGL 品牌库集成**：原生集成 SVGL 接口，支持只需提供知名品牌名称（如 GitHub, OpenAI），AI 即可自动下载并内联其高清矢量 SVG Logo。
+- **✨ AetherViz 交互架构 (V9.0)**：全新引入混合坐标系统与玻璃拟态控制面板，支持将静态展示无缝切换为具有 3D 拖拽、参数调节的交互式实验室模式。
+- **📚 高定幻灯片库 (V9.0)**：内置 6 套对标顶级商业美学的 Phantom Deck 模板（包含新野兽派、暗色报刊编辑风等），完美覆盖从学术答辩到硅谷路演的全部场景。
 - **🚫 0 版权法务风险**：所有核心特效全部由原生 WebGL、Three.js Shader 和 开源协议库构成，拒绝任何闭源付费插件，生成的 MP4 视频 100% 归创作者所有。
 
 ---
@@ -49,7 +51,7 @@ phantom-motion/
 ├── scripts/                # 核心引擎脚本（TTS生成、BGM生成、HTML拼装等）
 ├── tests/                  
 │   └── xingji/             # 《苍穹之轨：钱学森弹道》 完整动画示例与静态资源
-├── SKILL.md                # 核心智能体底层逻辑系统指令库 (System Prompt V6.0)
+├── SKILL.md                # 核心智能体底层逻辑系统指令库 (System Prompt V9.0)
 ├── logo.svg                # 动态 SVG 徽标
 ├── README.md               # 中文文档
 └── README_EN.md            # 英文文档
@@ -96,7 +98,7 @@ Phantom Motion 被设计为一个极其优雅的 CLI 智能体 Skill。它可以
 
 ## 🎬 Showcase: 终极性能阅兵剧本库 (Masterpiece Prompts)
 
-如果你想体验 V6.0 引擎的极限威力，请直接复制以下 5 个**「神级导演提示词」**喂给你的智能体：
+如果你想体验 V9.0 引擎的极限威力，请直接复制以下 5 个**「神级导演提示词」**喂给你的智能体：
 
 <details>
 <summary><b>♟️ 剧本 01：《神之一手》（30秒 · 极速高燃）</b></summary>
@@ -171,7 +173,7 @@ Phantom Motion 被设计为一个极其优雅的 CLI 智能体 Skill。它可以
 
 ## 🤝 鸣谢与版权声明
 
-本项目由 **紫苏子ACG** 原创开发。
+本项目由 **Pixelxzen** 原创开发。
 - **Phantom Motion 核心代码**：采用 [Apache-2.0 License](./LICENSE) 开源协议。
 - **字体与数学引擎**：基于 MIT 协议的 [KaTeX](https://github.com/KaTeX/KaTeX) 与 [SplitType](https://github.com/lukePeeters/SplitType)。
 - **图形与动画**：基于 [Three.js](https://threejs.org/) 与 [GSAP](https://greensock.com/)，部分数据图表渲染由 [D3.js](https://d3js.org/) 提供支持。
@@ -188,8 +190,8 @@ Phantom Motion 被设计为一个极其优雅的 CLI 智能体 Skill。它可以
 <div align="center">
   <p>
     <a href="https://www.xiaohongshu.com/user/profile/5b80023bd72b6300011273e6"><img src="https://img.shields.io/badge/Xiaohongshu-小红书-E1306C?style=flat-square&logo=xiaohongshu&logoColor=white" alt="Xiaohongshu"></a>
-    <img src="https://img.shields.io/badge/WeChat_Official-紫苏子ACG-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Official">
-    <img src="https://img.shields.io/badge/WeChat_Video-紫苏子ACG-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Video">
+    <img src="https://img.shields.io/badge/WeChat_Official-Pixelxzen-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Official">
+    <img src="https://img.shields.io/badge/WeChat_Video-Pixelxzen-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Video">
     <a href="https://x.com/Pixelxzen"><img src="https://img.shields.io/badge/X-(Twitter)-000000?style=flat-square&logo=x&logoColor=white" alt="X (Twitter)"></a>
   </p>
   

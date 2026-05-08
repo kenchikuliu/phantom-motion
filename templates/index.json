@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "template_count": 6,
+  "templates": [
+    {
+      "slug": "neo-grid-dark",
+      "name": "Neo-Grid Dark (Cyberpunk)",
+      "tagline": "深邃的赛博朋克网格风，极高对比度发光材质与毛玻璃面板的碰撞。",
+      "mood": ["confident", "cyberpunk", "tech-forward", "mysterious"],
+      "occasion": ["tech launch", "product pitch", "data visualization", "algorithmic demo"],
+      "tone": ["bold", "futuristic", "data-heavy", "minimal"],
+      "formality": "medium",
+      "density": "high",
+      "scheme": "dark",
+      "best_for": "适合展示复杂的科技概念、编程算法或宏大的宇宙物理，极具影视级光影质感。",
+      "avoid_for": "需要温暖、人文、手绘或古典文学感的场景。",
+      "slide_count": 4
+    },
+    {
+      "slug": "minimal-academic",
+      "name": "Minimal Academic (极简学术风)",
+      "tagline": "严谨、留白、克制的学术风，衬线体与单色网格图表的完美融合。",
+      "mood": ["literary", "considered", "studious", "quietly-modern", "editorial"],
+      "occasion": ["academic deck", "research findings", "white paper", "advisory pitch"],
+      "tone": ["sober", "polished", "intelligent", "neutral"],
+      "formality": "high",
+      "density": "medium",
+      "scheme": "light",
+      "best_for": "任何需要显得学识渊博、冷静、理性的场景。极简的黑白灰配以单色强调（如深钴蓝），适合学术答辩、深度调研报告、行业白皮书。",
+      "avoid_for": "需要极高视觉冲击力、赛博朋克发光特效或色彩斑斓的故事线场景。",
+      "slide_count": 4
+    },
+    {
+      "slug": "neumorphism-soft",
+      "name": "Neumorphism Soft (新拟物主义)",
+      "tagline": "温润、物理感强烈的软雕塑界面，极致平滑的光影浮雕感。",
+      "mood": ["soft", "modern", "playful", "warm", "approachable"],
+      "occasion": ["product demo", "app showcase", "UX presentation", "creative pitch"],
+      "tone": ["tactile", "friendly", "clean", "innovative"],
+      "formality": "medium",
+      "density": "low",
+      "scheme": "light",
+      "best_for": "适合展示 UI/UX 设计理念、消费级产品发布、或者是需要传达'亲和力与现代感'的创意路演。",
+      "avoid_for": "信息密度极高的数据密集型场景，由于大面积留白和阴影占用，不适合展示密集的财务报表。",
+      "slide_count": 4
+    },
+    {
+      "slug": "broadside-dark",
+      "name": "Broadside Dark Editorial (暗夜报刊)",
+      "tagline": "全黑画布上的火焰橙单色强调，Playfair Display 衬线巨字与报纸式横幅的碰撞，深沉而戏剧化。",
+      "mood": ["editorial", "dramatic", "loud", "newspaper", "nocturnal"],
+      "occasion": ["brand manifesto", "founder vision deck", "magazine pitch", "design talk", "bilingual EN/CN deck", "campaign launch", "research synthesis"],
+      "tone": ["graphic", "punchy", "literary", "considered", "intentional"],
+      "formality": "medium-high",
+      "density": "medium",
+      "scheme": "dark",
+      "best_for": "任何应该像报纸头条一样震撼登场的场景：品牌宣言、创始人愿景路演、杂志文化类提案、设计演讲、中英双语报告。同样适合科技/调研/商业路演中想要以戏剧性的单色编辑感而非公司模板感呈现的场合。附带 Three.js 3D 英雄模型与 D3 火焰色增长图表。",
+      "avoid_for": "需要感觉安静、温暖或传统机构庄重感的场景——黑底+火焰橙的组合注定是戏剧性的。",
+      "slide_count": 4
+    },
+    {
+      "slug": "sakura-cassette",
+      "name": "Sakura Cassette (日式卡带美学)",
+      "tagline": "复古日本卡带包装美学：奶油纸底、对角彩虹缎带、Anton 粗缩体标题、JIS 规格复选框清单。",
+      "mood": ["retro", "playful", "kawaii-tech", "warm", "tactile", "product-catalogue"],
+      "occasion": ["product launch", "indie brand deck", "music label", "creative studio annual", "magazine pitch", "vintage campaign"],
+      "tone": ["playful", "confident", "warm", "tactile", "80s-Japanese-tech"],
+      "formality": "low",
+      "density": "medium",
+      "scheme": "light",
+      "best_for": "任何应该像 TDK/Sony/Sakura 卡带包装一样感觉复古但充满活力的场景：独立硬件品牌路演、音乐厂牌发布、模拟录音室回顾展、杂志提案、可爱科技产品发布。独特的 JIS 规格清单组件非常适合展示功能矩阵。五色彩虹缎带 SVG 装饰是整套模板的视觉灵魂。",
+      "avoid_for": "需要克制、正式企业或安静排版的场景——粗体缩字锁排、彩虹缎带和高饱和度色盘是故意张扬的。",
+      "slide_count": 4
+    },
+    {
+      "slug": "neo-brutal-grid",
+      "name": "Neo-Brutalist Grid (新野兽派网格)",
+      "tagline": "粗边框 + 偏移阴影卡片，粉/鼠尾草/琥珀三色调配 Space Grotesk 无衬线体，生猛而自信。",
+      "mood": ["raw", "punchy", "energetic", "confident", "graphic"],
+      "occasion": ["startup pitch", "accelerator demo day", "founder pitch", "indie product launch", "brand deck", "creator portfolio", "conference talk"],
+      "tone": ["direct", "modern", "no-nonsense", "graphic", "design-led"],
+      "formality": "medium-low",
+      "density": "high",
+      "scheme": "light",
+      "best_for": "任何应该感觉直接、图形化、自信的场景：创始人路演、加速器演示日、品牌路演、独立产品发布、创作者作品集。特别适合数据统计幻灯片——三色偏移阴影卡片让枯燥的数字变得极具视觉张力。高亮 marker 标记（粉/绿/黄）和药丸标签是独特的签名元素。",
+      "avoid_for": "需要感觉柔和、温暖或刻意安静的场景——野兽派的粗边框和偏移阴影注定是图形化的声音。",
+      "slide_count": 4
+    }
+  ]
+}

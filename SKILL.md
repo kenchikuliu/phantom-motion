@@ -12,11 +12,13 @@ description: >-
   （支持 MIT 协议的 SVGL 库，内置 1500+ 品牌 Logo 资产）
 ---
 
-# 幻象 MotionGraphic 智能体 v8.1.0 (SVGL Integration)
+# 幻象 MotionGraphic 智能体 v9.0.0 (AetherViz Fusion)
 
 世界顶级视觉设计大师与动态图形艺术家工作流。融合乔布斯对产品直觉的偏执、
 迪特·拉姆斯「少，却更好」的功能纯粹主义、以及现代数字艺术的前沿美学。
-v7.0 引入了**实时物理引擎与流体粒子碰撞**指令支持，配合 v6.5 的 **Remotion 工业级视频渲染管线**，
+v9.0 引入了 **混合渲染架构 (Three.js + SVG Overlay)**、**玻璃拟态交互控制面板**、
+**KaTeX 数学公式实时渲染** 以及 **学科智能识别与主题色自动切换**，
+配合 v7.0 的实时物理引擎与 v6.5 的 Remotion 工业级视频渲染管线，
 支持将具备真实物理反馈的 Three.js 3D 代码动画直接导出为高码率、完美同步的 MP4 视频。
 追求的不仅是「好看」，更是「震撼」——能够深度触动用户情感、完美传递信息、
 并创造难忘体验的叙事性视觉语言。
@@ -52,6 +54,9 @@ v7.0 引入了**实时物理引擎与流体粒子碰撞**指令支持，配合 v
 >    - **[2D 阵法与棋局引擎]**：涉及围棋、象棋、八卦，绝对禁止用图片！必须调用 `SVG Matrix` 纯代码生成，并用 GSAP 实现带有回弹阻尼的“落子/演化”动画。
 >    - **[数据可视化引擎]**：涉及历史趋势、物理变量对比、人口变化，**绝对禁止使用 ECharts/Chart.js！** 必须且只能调用 `D3.js + GSAP`，将真实数据映射为极具东方美学的高级平滑曲线（Spline），并配合旁白做动态生长动画。
 >    - **[粒子与材质引擎]**：涉及宇宙、流体、书画，调用 GPGPU 或 GLSL Shader。
+>    - **[混合渲染引擎 v9.0]**：当幻灯片同时包含 3D 模型 **和** 2D 数据/标注/公式时，调用 `createHybridRenderer()` 建立 Three.js + SVG Overlay 双层渲染管线，通过 `projectToScreen()` 实现 3D→2D 实时坐标投影。详见 `references/components-hybrid-render.md`。
+>    - **[KaTeX 公式引擎 v9.0]**：涉及数学公式、物理定律、化学方程式时，引入 KaTeX CDN 并使用 LaTeX 语法实时渲染矢量公式，配合 GSAP 实现逐行推导动画。详见 `references/components-katex.md`。
+>    - **[交互控制面板 v9.0]**：当用户选择「交互模式」时，注入玻璃拟态控制面板（滑块实时控参 + Raycaster 3D 点击高亮），将幻灯片从被动播放器升级为主动操控台。详见 `references/components-interactive-panel.md`。
 > 3. **强制极简片尾 `[最后3秒]`**：Linear 级别黑幕淡出，浮现 LOGO，余音绕梁。
 > 4. **旁白与字幕【极简铁律】**：每一行字幕**绝对不能超过 15 个字！** 多用短句、换行，结合 Gemini Flash TTS 级别的情感音色（如深沉男声/知性女声），为 BGM 和运镜留出充足的呼吸感。
 > 
@@ -97,31 +102,43 @@ v7.0 引入了**实时物理引擎与流体粒子碰撞**指令支持，配合 v
    主导方案：{scheme_primary}
    辅助方案：{scheme_secondary} + {scheme_tertiary}
 
-⏱️ 动画时长选择：
-   1. ⚡ 30 秒 — 社交短视频，精练冲击
-   2. 🎬 60 秒 — 标准讲解，深度适中（推荐）
-   3. 🎥 120 秒 — 深度叙事，纪录片级
-   4. 📽️ 自定义时长
+⏱️ 时长与输出格式选择：
+   1. ⚡ 30 秒短视频 — 连续动画，社交短片
+   2. 🎬 60 秒长视频 — 连续动画，深度讲解（默认推荐）
+   3. 🖥️ 自动路演幻灯片 (Phantom Deck) — 幻灯片分屏结构，可键盘翻页或跟随旁白自动翻页
 
-💡 你也可以指定其他设计方案组合（A-Q 可选，见下方方案库）
+🕹️ 交互模式（仅 Phantom Deck 格式可选）：
+   A. 📺 观影模式（默认）— 纯展示，观众被动观看
+   B. 🎮 交互模式 — 注入玻璃拟态控制面板：观众可通过滑块实时调参、点击 3D 模型弹出详情
+
+💡 你也可以指定其他设计方案组合（A-S 可选，见下方方案库）
 ```
 
-设计方案智能匹配规则——根据主题关键词自动推荐：
+### 1.1 核心模板库 (Phantom Deck Templates)
+当输出格式为 `Phantom Deck` 时，优先从以下 6 套顶级模板中选择或借鉴：
 
-| 主题类型 | 关键词特征 | 推荐方案组合 |
-|---------|-----------|------------|
-| 科技/AI/编程/算法 | 人工智能、编程、算法、代码 | B 赛博朋克 + H 粒子系统 + E 3D空间 |
-| 自然/生物/生态/医学 | 自然、生物、细胞、DNA、生态 | C 流体设计 + M 生物形态 + G 动态渐变 |
-| 宇宙/物理/天文/量子 | 宇宙、黑洞、量子、星系、物理 | J 梦想家 + H 粒子系统 + I 暗黑模式 |
-| 生活/美食/旅行/时尚 | 美食、旅行、生活、时尚、美妆 | Q 小红书美学 + P 平面扁平化 + N 手绘风格 |
-| 历史/人文/艺术/哲学 | 历史、文明、哲学、艺术、文化 | N 手绘风格 + F 极简几何 + K 全息投影 |
-| 工业/材料/工程/建筑 | 材料、工程、建筑、制造、工业 | L 液态金属 + A 新拟物主义 + E 3D空间 |
-| 设计/UI/产品/品牌 | 设计、UI、产品、品牌、用户体验 | D 毛玻璃 + A 新拟物主义 + F 极简几何 |
-| 数据/金融/商业/经济 | 数据、金融、商业、经济、市场 | P 平面扁平化 + G 动态渐变 + F 极简几何 |
-| 游戏/娱乐/复古/文化 | 游戏、像素、复古、动漫、文化 | O 像素艺术 + B 赛博朋克 + I 暗黑模式 |
-| 哲学/道教/太极/能量 | 太极、阴阳、道教、平衡、能量 | R 东方太极哲学 + J 梦想家 + I 暗黑模式 |
-| 航空/航天/星体/全球 | 地球、太阳、全球、航天、星系 | S 全息星体宇宙 + E 3D空间 + H 粒子系统 |
-| 微观/魔法/特效/流体 | 黑洞、宇宙尘埃、流体、文字汇聚 | T GPGPU粒子流体 + H 粒子系统 + I 暗黑模式 |
+| 方案名称 | 核心美学流派 | 适用场景 | 关键字体组合 | 配色方案 (主题变量) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Broadside Dark** | 现代暗色编辑风 | 品牌宣言/愿景/中英报告 | Playfair + Inter | #0A0A0A (黑) + #FF4F1A (橙) |
+| **Sakura Cassette** | 日式复古卡带 | 硬件发布/产品目录/创意回顾 | Anton + DM Sans | #FBF7F0 (奶油) + 彩虹缎带 |
+| **Neo-Brutal Grid** | 新野兽派网格 | 创业路演/加速器/数据分析 | Space Grotesk | #F5F0E6 (骨白) + 粉/绿/黄 |
+| **Neo-Grid Dark** | 赛博朋克/科技感 | 物理/宇宙/代码/科幻 | Syncopate + Inter | #050505 (黑) + #00F0FF (青) |
+| **Minimal Academic** | 极简学术/白皮书 | 数学/论文/行业报告 | Lora + Jost | #FFFFFF (白) + #000000 (黑) |
+| **Neumorphism Soft**| 新拟物/软雕塑 | UI设计/消费品/亲和力 | Nunito | #E0E5EC (灰) + 柔和阴影 |
+
+设计方案智能匹配规则——根据主题关键词自动推荐（v9.0 新增学科配色列）：
+
+| 主题类型 | 关键词特征 | 推荐模板/方案组合 | 学科主题色 |
+|---------|-----------|------------|----------|
+| 科技/AI/编程/算法 | 人工智能、代码 | **Broadside** 或 B 赛博朋克 | `--theme-programming: #22C55E → #14B8A6` |
+| 自然/生物/医疗 | 细胞、DNA | **Sakura** 或 C 流体设计 | `--theme-biology: #10B981 → #22D3EE` |
+| 宇宙/物理/量子 | 黑洞、物理 | **Neo-Grid** 或 H 粒子系统 | `--theme-astronomy: #1E40AF → #3B82F6` |
+| 数学/公式/几何 | 定理、函数 | **Academic** + KaTeX 引擎 | `--theme-math: #F59E0B → #EAB308` |
+| 设计/UI/产品 | 品牌、用户体验 | **Neo-Brutal** 或 A 新拟物 | `--theme-design: #14B8A6 → #06B6D4` |
+| 商业/金融/市场 | 金融、数据 | **Broadside** 或 P 平面扁平化 | `--theme-finance: #FB923C → #F59E0B` |
+| 游戏/娱乐/文化 | 像素、复古 | **Sakura** 或 O 像素艺术 | `--theme-gaming: #A855F7 → #EC4899` |
+| 化学/材料/反应 | 元素、反应 | **Academic** + 混合渲染 | `--theme-chemistry: #F59E0B → #EF4444` |
+| 设计哲学/品牌 | 视觉、哲学 | **Broadside** + 3D 渲染 | `--theme-design: #14B8A6 → #06B6D4` |
 
 - `references/components-planet.md`: 全息星体宇宙高精度代码片段
 - `references/components-particles.md`: 影视级 GPGPU 粒子流体特效引擎
@@ -132,6 +149,37 @@ v7.0 引入了**实时物理引擎与流体粒子碰撞**指令支持，配合 v
 - `references/components-eastern.md`: 东方美学渲染技术栈 (易经阵列/飞白水墨/3D画卷)
 - `references/components-archive.md`: 历史档案图加载呈现引擎 (Ken Burns/3D全息与生命周期锁)
 - `references/components-magic-move.md`: GSAP Flip 插件与类 Keynote 神奇移动转场
+- `references/components-charts-2d.md`: 影视级 2D 图表引擎 (D3.js + GSAP，严禁 ECharts)
+- `references/components-charts-3d.md`: 影视级 3D 图表引擎 (Three.js + GSAP)
+- `references/components-hybrid-render.md`: 🆕 v9.0 混合渲染引擎 (Three.js + SVG Overlay 坐标同步)
+- `references/components-interactive-panel.md`: 🆕 v9.0 玻璃拟态交互控制面板 (滑块/Raycaster 3D 点击)
+- `references/components-katex.md`: 🆕 v9.0 KaTeX 数学公式实时渲染与 GSAP 推导动画
+
+### Step 2.5：幻象路演候选预览法则 (Triple-Preview Rule)
+
+**仅当用户选择了【3. 自动路演幻灯片 (Phantom Deck)】格式时触发此步骤。**
+
+不要直接全量生成整个 HTML！你必须首先读取 `templates/index.json`，根据用户的主题（情绪、调性），筛选出最合适的 3 个候选模板，并向用户提供 3 个【封面页 (Title Slide)】的轻量化代码预览，让用户抉择：
+
+```
+🎯 针对您的主题，我为您匹配了以下 3 种情绪的幻灯片风格：
+
+1️⃣ 方案 A：[模板名称]（调性：[tone]）
+   - [简短描述为什么适合]
+2️⃣ 方案 B：[模板名称]（调性：[tone]）
+   - [简短描述为什么适合]
+3️⃣ 方案 C：[模板名称]（调性：[tone]）
+   - [简短描述为什么适合]
+
+请告诉我您更倾向于哪一种风格？我将为您加载该套设计语言生成完整的路演幻灯片！
+```
+（只有在用户做出选择后，才能继续生成完整 HTML 的剩余步骤）
+
+### Step 3.5: 核心资产强化 (Asset Enrichment)
+
+- 分析文案核心实体（人物、产品等）。
+- 使用 `python3 scripts/png-search.py --query "实体名称"` 尝试抓取透明产品图 URL。
+- 将图片注入模板的 `.hero-asset` 槽位，并赋予 GSAP `ease: "elastic.out"` 的 Q 弹飞入效果以及悬浮动效。
 
 ### Step 3：旁白设置
 
@@ -161,7 +209,7 @@ v7.0 引入了**实时物理引擎与流体粒子碰撞**指令支持，配合 v
    • 品牌 Logo（支持直接输入知名品牌名称，如 OpenAI、Vercel、Claude、Github 等，AI 将自动从 1500+ SVGL 库中调取；也可提供本地 SVG/PNG 路径）
    • 品牌主色值（如 #FF6B35，如果不指定，AI 可根据 Logo 自动提取主色调）
    • 自定义字体文件路径
-   • 版权署名（默认保留：© 2026 Creative by 紫苏子ACG。如需修改请直接告诉我！）
+   • 版权署名（默认保留：© 2026 Creative by Pixelxzen。如需修改请直接告诉我！）
 ```
 
 ### Step 5：确认执行

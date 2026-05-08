@@ -114,4 +114,4 @@ body { margin:0; padding:0; overflow:hidden; display:flex;
 | `{tts_duration}` | TTS 内容时长（秒） | 60 |
 | `{subtitles_json}` | 字幕 JSON 数据 | [见字幕格式] |
 | `{brand_config}` | 品牌配置（可选） | Logo SVG, 主色 #FF6B35 |
-| `{copyright}` | 版权署名 | 紫苏子ACG |
+| `{copyright}` | 版权署名 | Pixelxzen |

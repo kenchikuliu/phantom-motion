@@ -13,7 +13,7 @@
   </p>
 
   <p>
-    <img src="https://img.shields.io/badge/Version-8.1.0-8A64B7.svg?style=for-the-badge" alt="Version">
+    <img src="https://img.shields.io/badge/Version-9.0.0-8A64B7.svg?style=for-the-badge" alt="Version">
     <img src="https://img.shields.io/badge/License-Apache_2.0-success.svg?style=for-the-badge" alt="License">
     <img src="https://img.shields.io/badge/AI_Agent-Claude_Code_/_Gemini-blue.svg?style=for-the-badge" alt="AI Agent">
     <img src="https://img.shields.io/badge/Stack-Three.js_|_GSAP-black.svg?style=for-the-badge" alt="Stack">
@@ -33,8 +33,11 @@ Code animations on the market are often "stiff element translations" with "highl
 
 - **🎙️ Audio-First Engine**: Generates sound before drawing visuals. Utilizes TTS to obtain an absolute timeline, enabling GSAP `Duck & Swell` (BGM automatically yielding to vocals) for microsecond audio-visual synchronization.
 - **🎥 Script-Driven Cinematic Camera Rig**: Strictly prohibits random camera flying! Built-in classic cinematic camera movements. The LLM schedules the 3D camera precisely using GSAP tracking proxy technology based on script emotion.
-- **🏛️ 3D Heritage & Hologram Engine**: Directly supports GLTF/GLB high-poly PBR model loading and one-click switching to `Hologram Mode` (purple glowing mesh perspective), perfectly deducing the collision of cultural heritage and modern technology.
+- **🏛️ 3D Heritage & Hologram Engine**: Directly supports GLTF/GLB high-poly PBR model loading and one-click switching to `Hologram Mode` (glowing mesh perspective), perfectly deducing the collision of cultural heritage and modern technology.
 - **📊 Advanced Data Visualization Engine**: Discards frame-dropping chart libraries, using `D3.js + GSAP` to map real data into high-end smooth curves (Spline) with dynamic growth animations synchronized with narration.
+- **🏷️ SVGL Brand Library Integration**: Native integration with SVGL API. By just providing a well-known brand name (like GitHub, OpenAI), AI automatically downloads and inlines its HD vector SVG Logo.
+- **✨ AetherViz Interactive Architecture (V9.0)**: Newly introduced hybrid coordinate system and glass-morphism control panels, enabling seamless transition from static presentation to a 3D interactive lab mode with draggable parameters.
+- **📚 Haute Couture Deck Templates (V9.0)**: Built-in 6 Phantom Deck templates matching top-tier commercial aesthetics (including Neo-Brutalist, Dark Editorial styles), perfectly covering scenarios from academic defenses to Silicon Valley pitches.
 - **🚫 0 Copyright & Legal Risks**: All core effects are composed of native WebGL, Three.js Shaders, and open-source libraries. Refusing any closed-source paid plugins, the generated MP4 videos belong 100% to the creators.
 
 ---
@@ -48,7 +51,7 @@ phantom-motion/
 ├── scripts/                # Core engine scripts (TTS generation, BGM generation, HTML assembly)
 ├── tests/                  
 │   └── xingji/             # "Qian Xuesen Trajectory" complete animation example & static assets
-├── SKILL.md                # Core agent logic system instruction library (System Prompt V6.0)
+├── SKILL.md                # Core agent logic system instruction library (System Prompt V9.0)
 ├── logo.svg                # Dynamic SVG Logo
 ├── README.md               # Chinese Documentation
 └── README_EN.md            # English Documentation
@@ -95,7 +98,7 @@ Phantom Motion is designed as an extremely elegant CLI agent Skill. It can be mo
 
 ## 🎬 Showcase: Masterpiece Prompts
 
-If you want to experience the extreme power of the V6.0 engine, directly copy the following 5 **"God-level Director Prompts"** to your agent:
+If you want to experience the extreme power of the V9.0 engine, directly copy the following 5 **"God-level Director Prompts"** to your agent:
 
 <details>
 <summary><b>♟️ Script 01: "God's Move" (30s · Fast-paced & Epic)</b></summary>
@@ -170,7 +173,7 @@ If you want to experience the extreme power of the V6.0 engine, directly copy th
 
 ## 🤝 Acknowledgements & License
 
-This project was originally developed by **紫苏子ACG (Zisuzi ACG)**.
+This project was originally developed by **Pixelxzen**.
 - **Phantom Motion Core Code**: Open-sourced under the [Apache-2.0 License](./LICENSE).
 - **Font & Math Engine**: Based on MIT licensed [KaTeX](https://github.com/KaTeX/KaTeX) and [SplitType](https://github.com/lukePeeters/SplitType).
 - **Graphics & Animation**: Powered by [Three.js](https://threejs.org/) and [GSAP](https://greensock.com/), partial data chart rendering supported by [D3.js](https://d3js.org/).
@@ -187,8 +190,8 @@ If you like this project, feel free to follow my social media or buy me a coffee
 <div align="center">
   <p>
     <a href="https://www.xiaohongshu.com/user/profile/5b80023bd72b6300011273e6"><img src="https://img.shields.io/badge/Xiaohongshu-小红书-E1306C?style=flat-square&logo=xiaohongshu&logoColor=white" alt="Xiaohongshu"></a>
-    <img src="https://img.shields.io/badge/WeChat_Official-紫苏子ACG-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Official">
-    <img src="https://img.shields.io/badge/WeChat_Video-紫苏子ACG-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Video">
+    <img src="https://img.shields.io/badge/WeChat_Official-Pixelxzen-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Official">
+    <img src="https://img.shields.io/badge/WeChat_Video-Pixelxzen-07C160?style=flat-square&logo=wechat&logoColor=white" alt="WeChat Video">
     <a href="https://x.com/Pixelxzen"><img src="https://img.shields.io/badge/X-(Twitter)-000000?style=flat-square&logo=x&logoColor=white" alt="X (Twitter)"></a>
   </p>
   
